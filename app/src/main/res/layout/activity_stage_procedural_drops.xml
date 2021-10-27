@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".type_learn.stage_proceduralDrops">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/AREA_TOP"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="ENGLISH"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="30dp"
+        android:id="@+id/ENGLISH_AREA_TOP_ONE"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ROMAJI_AREA_TOP_ONE"
+        app:layout_constraintLeft_toLeftOf="@id/ENGLISH_AREA_TOP_ONE"
+        app:layout_constraintRight_toRightOf="@id/ENGLISH_AREA_TOP_ONE"
+        app:layout_constraintTop_toBottomOf="@id/ENGLISH_AREA_TOP_ONE"
+        android:textColor="@color/black"
+        android:text="ROMAJI JAPAN"
+      />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:id="@+id/JAPANESE_AREA_TOP_ONE"
+        android:text="JAPANESE TEXT"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/ROMAJI_AREA_TOP_ONE"
+        app:layout_constraintRight_toRightOf="@id/ROMAJI_AREA_TOP_ONE"
+        app:layout_constraintTop_toBottomOf="@id/ROMAJI_AREA_TOP_ONE"
+        />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/AREA_BOTTOM"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:layout_marginBottom="40dp"
+      >
+
+    <TextView
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENGLISH_ONE"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/ENGLISH_AREA_TOP_TWO"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ROMAJI_AREA_TOP_TWO"
+        app:layout_constraintLeft_toLeftOf="@id/ENGLISH_AREA_TOP_TWO"
+        app:layout_constraintRight_toRightOf="@id/ENGLISH_AREA_TOP_TWO"
+        app:layout_constraintTop_toBottomOf="@id/ENGLISH_AREA_TOP_TWO"
+        android:text="ROMAJI_TWO"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/JAPANESE_AREA_TOP_TWO"
+        android:text="JAPANESE TEXT"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/ROMAJI_AREA_TOP_TWO"
+        app:layout_constraintRight_toRightOf="@id/ROMAJI_AREA_TOP_TWO"
+        app:layout_constraintTop_toBottomOf="@id/ROMAJI_AREA_TOP_TWO"
+
+        />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/linear_image"
+      android:orientation="vertical"
+      android:gravity="center">
+  <ImageView
+      android:layout_width="250dp"
+      android:layout_height="250dp"
+      android:id="@+id/procedural_image"
+      android:src="@drawable/universe"
+      android:layout_gravity="center"
+      />
+
+  </LinearLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>

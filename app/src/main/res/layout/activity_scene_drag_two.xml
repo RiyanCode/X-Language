@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".type_learn.SceneDrag_Two"
+    android:background="@drawable/gradient_list"
+    >
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/display_text"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white"
+        android:id="@+id/display_romaji"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Text"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@id/display_romaji"
+        app:layout_constraintLeft_toLeftOf="@id/display_romaji"
+        app:layout_constraintRight_toRightOf="@id/display_romaji"
+        />
+
+
+    <ImageView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:translationY="-50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/scene_one_top"
+        />
+
+    <ProgressBar
+        android:id="@+id/levelBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="145dp"
+        android:layout_height="15dp"
+        android:max="100"
+        android:progress="30"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.013" />
+
+
+    <ImageView
+        android:id="@+id/imageViewSceneOne_itemone"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/nuclear_energy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.459"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageViewSceneOne_itemtwo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/neutron"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/imageViewSceneOne_itemthree"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/energy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24"
+        app:tint="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="english_one"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/imageViewSceneOne_itemone"
+        app:layout_constraintLeft_toLeftOf="@id/imageViewSceneOne_itemone"
+        app:layout_constraintRight_toRightOf="@id/imageViewSceneOne_itemone"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/text_ones"
+        />
+
+    <TextView
+        android:id="@+id/text_twos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="english_two"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/imageViewSceneOne_itemtwo"
+        app:layout_constraintLeft_toLeftOf="@id/imageViewSceneOne_itemtwo"
+        app:layout_constraintRight_toRightOf="@id/imageViewSceneOne_itemtwo"
+        android:layout_margin="25dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text_threes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="english_three"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/imageViewSceneOne_itemthree"
+        app:layout_constraintLeft_toLeftOf="@id/imageViewSceneOne_itemthree"
+        app:layout_constraintRight_toRightOf="@id/imageViewSceneOne_itemthree"
+        android:layout_margin="25dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dropAreaScenetwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Energy"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="japan text"
+        android:id="@+id/areaddroptextJapan"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/dropAreaScenetwo"
+        app:layout_constraintLeft_toLeftOf="@id/dropAreaScenetwo"
+        app:layout_constraintRight_toRightOf="@id/dropAreaScenetwo"
+
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_fileName="answer_true.json"
+        android:id="@+id/verified_scenetwo_true"
+        app:lottie_autoPlay="true"
+        app:lottie_progress="@integer/material_motion_duration_long_2"
+        android:scaleX="0.0"
+        android:scaleY="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="512dp"
+        android:layout_height="512dp"
+        app:lottie_fileName="answer_failed.json"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/verified_scenetwo_false"
+        app:lottie_autoPlay="true"
+        android:visibility="invisible"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
